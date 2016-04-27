@@ -68,9 +68,7 @@ public class ListViewAdapter extends BaseAdapter {
         // Set the results into TextViews
         holder.rank.setText(worldpopulationlist.get(position).getRank());
         holder.country.setText(worldpopulationlist.get(position).getCountry());
-        holder.population.setText(worldpopulationlist.get(position)
-                .getPopulation());
-        // Set the results into ImageView
+
 
         // Listen for ListView Item Click
         view.setOnClickListener(new OnClickListener() {
@@ -85,9 +83,7 @@ public class ListViewAdapter extends BaseAdapter {
                 // Pass all data country
                 intent.putExtra("country",
                         (worldpopulationlist.get(position).getCountry()));
-                // Pass all data population
-                intent.putExtra("population",
-                        (worldpopulationlist.get(position).getPopulation()));
+
 
                 // Start SingleItemView Class
                 mContext.startActivity(intent);

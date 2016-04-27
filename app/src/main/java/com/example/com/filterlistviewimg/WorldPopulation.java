@@ -10,10 +10,10 @@ public class WorldPopulation {
     private String population;
 
 
-    public WorldPopulation(String rank, String country, String population) {
+    public WorldPopulation(String rank, String country) {
         this.rank = rank;
         this.country = country;
-        this.population = population;
+
 
     }
 
@@ -25,9 +25,7 @@ public class WorldPopulation {
         return this.country;
     }
 
-    public String getPopulation() {
-        return this.population;
-    }
+
 
 
 }
