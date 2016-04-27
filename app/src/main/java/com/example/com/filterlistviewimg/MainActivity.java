@@ -16,11 +16,7 @@ public class MainActivity extends Activity {
     ListView list;
     ListViewAdapter adapter;
     EditText editsearch;
-    String[] rank;
     String[] country;
-    String[] population;
-    int[] flag;
-
     ArrayList<WorldPopulation> arraylist = new ArrayList<WorldPopulation>();
 
     @Override
