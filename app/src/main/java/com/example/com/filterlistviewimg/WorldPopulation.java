@@ -5,21 +5,19 @@ package com.example.com.filterlistviewimg;
  */
 public class WorldPopulation {
 
-    private String rank;
+
     private String country;
-    private String population;
 
 
-    public WorldPopulation(String rank, String country) {
-        this.rank = rank;
+
+    public WorldPopulation(String country) {
+
         this.country = country;
 
 
     }
 
-    public String getRank() {
-        return this.rank;
-    }
+
 
     public String getCountry() {
         return this.country;

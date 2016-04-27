@@ -66,7 +66,7 @@ public class ListViewAdapter extends BaseAdapter {
             holder = (ViewHolder) view.getTag();
         }
         // Set the results into TextViews
-        holder.rank.setText(worldpopulationlist.get(position).getRank());
+
         holder.country.setText(worldpopulationlist.get(position).getCountry());
 
 
@@ -77,9 +77,7 @@ public class ListViewAdapter extends BaseAdapter {
             public void onClick(View arg0) {
                 // Send single item click data to SingleItemView Class
                 Intent intent = new Intent(mContext, SingleItemView.class);
-                // Pass all data rank
-                intent.putExtra("rank",
-                        (worldpopulationlist.get(position).getRank()));
+
                 // Pass all data country
                 intent.putExtra("country",
                         (worldpopulationlist.get(position).getCountry()));

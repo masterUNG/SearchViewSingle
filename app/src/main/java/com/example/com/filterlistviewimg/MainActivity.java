@@ -72,7 +72,7 @@ public class MainActivity extends Activity {
         list = (ListView) findViewById(R.id.listview);
 
         for (int i = 0; i < rank.length; i++) {
-            WorldPopulation wp = new WorldPopulation(rank[i], country[i]);
+            WorldPopulation wp = new WorldPopulation(country[i]);
             // Binds all strings into an array
             arraylist.add(wp);
         }
