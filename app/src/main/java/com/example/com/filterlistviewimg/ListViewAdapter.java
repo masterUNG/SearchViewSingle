@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -56,11 +55,11 @@ public class ListViewAdapter extends BaseAdapter {
             holder = new ViewHolder();
             view = inflater.inflate(R.layout.listview_item, null);
             // Locate the TextViews in listview_item.xml
-            holder.rank = (TextView) view.findViewById(R.id.rank);
+
+
             holder.country = (TextView) view.findViewById(R.id.country);
-            holder.population = (TextView) view.findViewById(R.id.population);
-            // Locate the ImageView in listview_item.xml
-            holder.flag = (ImageView) view.findViewById(R.id.flag);
+
+
             view.setTag(holder);
         } else {
             holder = (ViewHolder) view.getTag();
@@ -109,10 +108,9 @@ public class ListViewAdapter extends BaseAdapter {
     }
 
     public class ViewHolder {
-        TextView rank;
+
         TextView country;
-        TextView population;
-        ImageView flag;
+
     }
 
 }
